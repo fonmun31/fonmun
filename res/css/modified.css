@@ -1,0 +1,38 @@
+/* All css added due to the modification of the original webpage */
+
+.text-transition-color {
+    color: white !important;
+    background-clip: text;
+    background: linear-gradient(to right, #6a9ae2, hsl(263, 83%, 55%) 50%, rgb(255, 255, 255) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.text-transition-color:hover {
+    background-position: 0 100%;
+}
+
+.fa-instagram-center {
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.subtitle {
+    opacity: 0;
+    transition: opacity 1s ease; 
+  }
+  
+.title-anim:hover + .subtitle{
+    opacity: 1; 
+}
+
+.subtitle:hover {
+    opacity: 1;
+}
+
