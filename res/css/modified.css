@@ -58,3 +58,25 @@
 .education-text {
   flex: 1;
 }
+
+
+
+
+
+/* ===============================
+   Mobile link click fix
+   =============================== */
+
+.features-box a {
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .show-on-hover {
+    pointer-events: none;
+  }
+}
+
+
