@@ -834,6 +834,45 @@
       <!-- //.row -->
 
 
+      <div class="row padding-8 no-padding-rl no-padding-bottom">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h3
+            class="font-family-alt font-weight-700 letter-spacing-2 text-uppercase xs-title-small title-medium title-sideline-base-color">
+            Organizational Chart
+          </h3>
+        </div>
+      </div>
+      <br><br>
+      <div class="row no-padding-rl">
+        <div class="col-md-12 text-center">
+      
+          <!-- Lightbox image -->
+          <a href="../res/images/orga-chart.png" class="popup-image">
+            <img
+              src="../res/images/orga-chart.png"
+              alt="FONMUN Organizational Chart"
+              style="width: 95%; max-width: 1400px; height: auto; cursor: zoom-in;"
+            />
+          </a>
+      
+          <!-- Download button -->
+          <div style="margin-top: 20px;">
+            <a
+              href="../res/images/orga-chart.png"
+              download
+              class="btn btn-base-color btn-medium"
+            >
+              Download
+            </a>
+          </div>
+      
+        </div>
+      </div>
+      
+      
+      
+
+
 
   <!-- Section - Parallax banner start -->
   <section id="home-bg-parallax" class="height-50 no-padding overflow-hidden width-100">
@@ -938,6 +977,23 @@
   <!-- Countdown -->
   <script src="../res/js/jquery.countdown.min.js"></script>
   <script src="../res/js/countdown.js"></script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('.popup-image').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: {
+          verticalFit: true
+        }
+      });
+    });
+  </script>
+  
+
 
 </body>
 
