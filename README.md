@@ -4,4 +4,5 @@
 - Github repo for Fonsorbes MUN's website
 - Highly inspired by : [Invicta MUN website](https://github.com/SujanPrasadPandey/Invicta-MUN) & [Tournefeuille MUN website](https://toumun.fr/)
 
-  Thank you to everyone that worked on that project ;)
+  Thank you to everyone  that worked on that project especially Matheo , Nicolas and Mathis ;)
+
