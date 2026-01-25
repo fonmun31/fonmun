@@ -80,3 +80,2993 @@
 }
 
 
+
+
+
+
+
+
+/* Section spacing */
+.section-block {
+  margin-top: 50px;
+}
+
+/* Card-style content blocks */
+.info-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Icons before subtitles */
+.section-icon {
+  font-size: 32px;
+  color: #c62828; /* base color */
+  margin-bottom: 15px;
+}
+
+/* Lists cleaner */
+.info-card ul {
+  padding-left: 20px;
+}
+
+.info-card ul li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+/* ============================= */
+/* Info cards styling */
+/* ============================= */
+
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon inside cards */
+.section-icon {
+  font-size: 38px;
+  color: #e53935; /* red theme base */
+  margin-bottom: 15px;
+}
+
+/* Allow cards to extend horizontally */
+@media (min-width: 992px) {
+  .wide-card {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+
+
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Type d'établissement sous le titre */
+/* ============================= */
+
+.school-type {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000; 
+  margin-top: 8px;
+  text-align: left;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Mobile adjustments (max-width: 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+  .info-card {
+    width: 100% !important;
+    margin: 15px 0;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -10px;
+  }
+
+  .timeline-content {
+    padding-left: 30px;
+  }
+
+  .access-icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .accordion .panel-body {
+    font-size: 16px;
+  }
+
+  .school-badge {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+
+  iframe.google-map {
+    height: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Books from our teachers */
+/* ============================= */
+
+.teachers-books-section {
+  margin-top: 60px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.book-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.book-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.book-header i {
+  font-size: 22px;
+  color: #1e88e5;
+}
+
+.book-header h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.book-meta {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Books from our teachers */
+/* ============================= */
+
+.teachers-books-section {
+  margin-top: 60px;
+}
+
+.books-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.filter-btn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #1e88e5;
+  color: #fff;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* BOOK CARD */
+.book-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
+}
+
+.book-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.book-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.book-header i {
+  font-size: 22px;
+  color: #1e88e5;
+}
+
+.book-meta {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.book-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.book-link:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .books-filters {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title with icon (same line) */
+
+.section-title-with-icon {
+  display: flex;
+  align-items: left;
+  justify-content: left; /* centre sur desktop */
+  gap: 14px;
+}
+
+/* Book icon */
+
+.section-title-icon {
+  font-size: 30px;
+  color: #1e88e5; /* bleu cohérent avec tes menus */
+  line-height: 1;
+}
+
+/* Mobile optimisation */
+@media (max-width: 768px) {
+  .section-title-with-icon {
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clubs section */
+
+.clubs-grid {
+  margin-top: 40px;
+}
+
+.club-card {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.club-description {
+  margin-bottom: 12px;
+}
+
+.club-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #e53935;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.club-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .filter-btn {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================
+   CLUBS GRID & CARDS
+============================= */
+
+.clubs-filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.clubs-filters .filter-btn {
+  border: 2px solid #ff7f00; /* orange border */
+  background: white;
+  color: #ff7f00;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+.clubs-filters .filter-btn:hover,
+.clubs-filters .filter-btn.active {
+  background: #007bff; /* blue on hover/active */
+  color: white;
+  border-color: #007bff;
+}
+
+.clubs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.club-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.club-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.club-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.club-header h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.category-badge.acad { background: #6f42c1; } /* purple */
+.category-badge.civic { background: #28a745; } /* green */
+.category-badge.arts { background: #fd7e14; } /* orange */
+.category-badge.eco { background: #20c997; } /* teal */
+.category-badge.boss { background: #17a2b8; } /* cyan */
+
+.club-purpose {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.club-meta a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.club-meta a:hover {
+  text-decoration: underline;
+}
+
+.club-skills {
+  margin-top: 12px;
+}
+
+.club-skills ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.club-skills li {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.club-skills i {
+  margin-right: 6px;
+  color: #ff7f00;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 992px) {
+  .clubs-grid {
+    justify-content: center;
+  }
+  .club-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .club-card {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Alumni Section === */
+.alumni-section {
+  padding: 60px 0;
+}
+
+/* Section title */
+.alumni-section h2 {
+  margin-bottom: 20px;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.alumni-buttons {
+  margin: 30px 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.alumni-btn {
+  background: transparent;
+  border: 2px solid #d1d5db;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.alumni-btn:hover {
+  background-color: #eef3fb;
+  border-color: #1f6fd1;
+}
+
+.alumni-btn.active {
+  border-color: #1f6fd1;
+  background-color: #f0f5ff;
+  box-shadow: 0 6px 18px rgba(31, 111, 209, 0.15);
+}
+
+/* Alumni content */
+.alumni-content {
+  display: none;
+  opacity: 0;
+  animation: fadeSlide 0.4s ease forwards;
+}
+
+.alumni-content.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+/* Column-header reste centré */
+.column-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Trait bleu sous le titre */
+.separator-line-extra-thick-long {
+    display: block;
+    width: 120px;
+    height: 6px;
+    background-color: var(--base-color, #1f6fd1);
+    border-radius: 3px;
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container principal de la carte */
+.school-card {
+    display: flex;              /* logo + info côte à côte */
+    align-items: flex-start;    /* alignement en haut */
+    gap: 12px;                  /* espace entre logo et texte */
+    padding: 12px;
+    border: 1px solid #ddd;     /* optionnel : bordure pour visualiser la carte */
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;                /* prend la largeur de la colonne parent */
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    flex-wrap: wrap;            /* permet au contenu de s’adapter */
+}
+
+/* Logo */
+.school-logo {
+    flex: 0 0 60px;             /* taille fixe du logo */
+    height: 60px;
+    object-fit: contain;        /* le logo garde ses proportions */
+    border-radius: 4px;
+}
+
+/* Texte et infos */
+.school-info {
+    flex: 1 1 0;                /* prend le reste de l'espace disponible */
+    min-width: 0;               /* important pour que le texte wrap correctement */
+}
+
+/* Nom et classement */
+.school-name {
+    font-weight: 600;
+    font-size: 1em;
+    display: block;
+    word-break: break-word;     /* casse les mots trop longs */
+}
+
+.school-ranking {
+    font-size: 0.85em;
+    color: #1f6fd1;
+    line-height: 1.2em;
+    display: block;
+    word-break: break-word;
+}
+
+/* Localisation */
+.school-location {
+    font-size: 0.85em;
+    color: #555;
+    display: block;
+    word-break: break-word;
+    margin-bottom: 6px;
+}
+
+/* Formations */
+.school-formations {
+    display: flex;
+    flex-wrap: wrap;            /* les tags passent à la ligne si besoin */
+    gap: 4px;
+}
+
+.formation-tag {
+    background-color: #f0f4ff;
+    color: #1f6fd1;
+    padding: 2px 6px;
+    font-size: 0.75em;
+    border-radius: 4px;
+    white-space: normal;        /* permet de wrap si nécessaire */
+}
+
+
+
+/* Colonnes avec ligne verticale */
+.pathways-column,
+.schools-column {
+    position: relative;
+    padding-left: 16px; /* espace entre la ligne et le contenu */
+}
+
+
+.pathways-column,
+.schools-column {
+  position: relative;
+  padding-left: 16px;
+  min-height: 100px; /* permet au ::before d’exister */
+}
+
+
+/* Ligne verticale qui commence sous le trait horizontal */
+/* Ligne verticale à gauche des colonnes alumni */
+.alumni-column::before {
+  content: "";
+  position: absolute;
+  top: 55px;                 /* commence sous le trait horizontal */
+  left: 0;
+  width: 4px;
+  height: calc(100% - 55px);
+  background-color: #1f6fd1;
+  border-radius: 2px;
+}
+
+/* Pré-requis indispensable */
+.alumni-column {
+  position: relative;
+  padding-left: 16px;
+  min-height: 100px;
+}
+
+
+
+
+/* Flèche simple, centrée, rotation cohérente */
+.accordion-icon {
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid var(--base-color, #1f6fd1);
+    border-bottom: 3px solid var(--base-color, #1f6fd1);
+    transform: rotate(-45deg); /* fermé */
+    transition: transform 0.3s ease;
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+    transform: rotate(45deg); /* ouvert */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lists styling with vertical accent */
+
+
+.alumni-list li {
+  background: #f7f9fc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: all 0.25s ease;
+}
+
+.alumni-list li:hover {
+  background: #eef3fb;
+  transform: translateX(4px);
+}
+
+/* Subtext */
+.alumni-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85em;
+  color: #6b7280;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* === School cards === */
+.school-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.school-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.school-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.school-location {
+  font-size: 0.85em;
+  color: #6b7280;
+}
+
+/* Hover effect for entire li */
+.alumni-list li:has(.school-card):hover {
+  transform: translateX(6px);
+  background: #eef3fb;
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .school-card {
+    gap: 10px;
+  }
+
+  .school-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* === School formations tags === */
+/* Force le conteneur à prendre toute la largeur de la carte */
+.school-formations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+
+  width: 100%;
+  justify-content: center;
+}
+
+.school-name {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.school-location {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.school-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.formation-tag {
+  font-size: 0.72em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  color: #1e40af;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Slight highlight on hover */
+.school-card:hover .formation-tag {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+
+
+
+/* === School header layout === */
+.school-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+/* Logo bien à gauche */
+.school-header .school-logo {
+  justify-self: start;
+}
+
+/* Nom parfaitement centré sur la ligne */
+.school-header .school-name {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+
+.school-name {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .school-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .school-logo {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* === Final school card layout: logo left, content right === */
+
+.school-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+/* Logo à gauche */
+.school-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Bloc texte à droite */
+.school-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre nom, ville et tags entre eux */
+  width: 100%;
+}
+
+/* Nom centré */
+.school-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Ville centrée */
+.school-location {
+  text-align: center;
+}
+
+/* Tags centrés */
+.school-formations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .school-card {
+    flex-direction: column;
+  }
+}
+
+.school-ranking {
+    text-align: center;       /* centré comme le nom */
+    font-size: 0.8em;         /* légèrement plus petit */
+    font-weight: 500;         /* semi-bold */
+    color: #1f6fd1;           /* bleu cohérent avec tes accents alumni */
+    margin: 4px 0;            /* un petit espace au-dessus et en-dessous */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   Schools Accordion (Alumni)
+   =============================== */
+
+.schools-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Accordion item */
+.accordion-item {
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  border-radius: 14px;
+  background: var(--card-bg, #fff);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header button */
+.accordion-header {
+  all: unset;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.1rem 1.4rem;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main, #111);
+
+  background: transparent;
+}
+
+.accordion-header:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+
+
+
+/* Content (collapsed by default) */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+/* When active */
+.accordion-item.active .accordion-content {
+  padding-bottom: 1.4rem;
+}
+
+/* Ensure school cards layout remains intact */
+.accordion-content > li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+/* Grid consistency with existing cards */
+.accordion-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+  .accordion-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ================================
+   ACCORDION GLOBAL
+================================ */
+
+.schools-accordion {
+  margin-top: 40px;
+}
+
+/* ================================
+   ACCORDION HEADER (CPGE, ENS, etc.)
+================================ */
+
+.accordion-item {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--base-color);
+  padding-left: 20px;
+}
+
+.accordion-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* Trait bleu sous le titre */
+.accordion-header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--base-color);
+  margin-top: 10px;
+}
+
+
+
+
+
+/* ================================
+   ACCORDION CONTENT
+================================ */
+
+.accordion-content {
+  margin-top: 25px;
+
+  padding-left: 20px;
+  border-left: 3px solid rgba(0, 120, 255, 0.25);
+}
+
+
+
+/* ================================
+   SCHOOL CARDS (distinctes)
+================================ */
+
+.accordion-content li {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.accordion-content .school-card {
+  display: flex;
+  gap: 20px;
+
+  background: #ffffff;
+  padding: 18px 22px;
+
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accordion-content .school-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+/* ================================
+   LOGO
+================================ */
+
+.school-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+/* ===============================
+   Alumni Accordion – FINAL
+   =============================== */
+
+.accordion-item {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--base-color, #1f6fd1);
+  padding-left: 20px;
+}
+
+.accordion-header {
+  all: unset;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+
+  padding: 16px 0;
+}
+
+.accordion-icon {
+  width: 12px;
+  height: 12px;
+  border-right: 3px solid var(--base-color, #1f6fd1);
+  border-bottom: 3px solid var(--base-color, #1f6fd1);
+  transform: rotate(-45deg);
+  transition: transform 0.35s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  padding-left: 20px;
+  border-left: 3px solid rgba(0,120,255,0.25);
+}
+
+.accordion-item.active .accordion-content {
+  padding-top: 20px;
+}
+
+
+
+/* === Alumni column accent (pathways & schools) === */
+.pathways-column::before,
+.schools-column::before {
+  background-color: var(--alumni-accent, #1f6fd1);
+}
+
+
+/* All css added due to the modification of the original webpage */
+
+.text-transition-color {
+    color: white !important;
+    background-clip: text;
+    background: linear-gradient(to right, #6a9ae2, hsl(263, 83%, 55%) 50%, rgb(255, 255, 255) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.text-transition-color:hover {
+    background-position: 0 100%;
+}
+
+.fa-instagram-center {
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.subtitle {
+    opacity: 0;
+    transition: opacity 1s ease; 
+  }
+  
+.title-anim:hover + .subtitle{
+    opacity: 1; 
+}
+
+.subtitle:hover {
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav > .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Education timeline layout */
+.timeline-education {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-logo img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+.education-text {
+  flex: 1;
+}
+
+
+
+
+
+/* ===============================
+   Mobile link click fix
+   =============================== */
+
+.features-box a {
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .show-on-hover {
+    pointer-events: none;
+  }
+}
+
+
+
+
+
+
+
+
+/* Section spacing */
+.section-block {
+  margin-top: 50px;
+}
+
+/* Card-style content blocks */
+.info-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Icons before subtitles */
+.section-icon {
+  font-size: 32px;
+  color: #c62828; /* base color */
+  margin-bottom: 15px;
+}
+
+/* Lists cleaner */
+.info-card ul {
+  padding-left: 20px;
+}
+
+.info-card ul li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+/* ============================= */
+/* Info cards styling */
+/* ============================= */
+
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon inside cards */
+.section-icon {
+  font-size: 38px;
+  color: #e53935; /* red theme base */
+  margin-bottom: 15px;
+}
+
+/* Allow cards to extend horizontally */
+@media (min-width: 992px) {
+  .wide-card {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+
+
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Type d'établissement sous le titre */
+/* ============================= */
+
+.school-type {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000; 
+  margin-top: 8px;
+  text-align: left;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Mobile adjustments (max-width: 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+  .info-card {
+    width: 100% !important;
+    margin: 15px 0;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -10px;
+  }
+
+  .timeline-content {
+    padding-left: 30px;
+  }
+
+  .access-icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .accordion .panel-body {
+    font-size: 16px;
+  }
+
+  .school-badge {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+
+  iframe.google-map {
+    height: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Books from our teachers */
+/* ============================= */
+
+.teachers-books-section {
+  margin-top: 60px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.book-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.book-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.book-header i {
+  font-size: 22px;
+  color: #1e88e5;
+}
+
+.book-header h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.book-meta {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* Books from our teachers */
+/* ============================= */
+
+.teachers-books-section {
+  margin-top: 60px;
+}
+
+.books-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.filter-btn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #1e88e5;
+  color: #fff;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* BOOK CARD */
+.book-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
+}
+
+.book-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.book-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.book-header i {
+  font-size: 22px;
+  color: #1e88e5;
+}
+
+.book-meta {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.book-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+.book-link:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .books-filters {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title with icon (same line) */
+
+.section-title-with-icon {
+  display: flex;
+  align-items: left;
+  justify-content: left; /* centre sur desktop */
+  gap: 14px;
+}
+
+/* Book icon */
+
+.section-title-icon {
+  font-size: 30px;
+  color: #1e88e5; /* bleu cohérent avec tes menus */
+  line-height: 1;
+}
+
+/* Mobile optimisation */
+@media (max-width: 768px) {
+  .section-title-with-icon {
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clubs section */
+
+.clubs-grid {
+  margin-top: 40px;
+}
+
+.club-card {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.club-description {
+  margin-bottom: 12px;
+}
+
+.club-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #e53935;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.club-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .filter-btn {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================
+   CLUBS GRID & CARDS
+============================= */
+
+.clubs-filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.clubs-filters .filter-btn {
+  border: 2px solid #ff7f00; /* orange border */
+  background: white;
+  color: #ff7f00;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+.clubs-filters .filter-btn:hover,
+.clubs-filters .filter-btn.active {
+  background: #007bff; /* blue on hover/active */
+  color: white;
+  border-color: #007bff;
+}
+
+.clubs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.club-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.club-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.club-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.club-header h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.category-badge.acad { background: #6f42c1; } /* purple */
+.category-badge.civic { background: #28a745; } /* green */
+.category-badge.arts { background: #fd7e14; } /* orange */
+.category-badge.eco { background: #20c997; } /* teal */
+.category-badge.boss { background: #17a2b8; } /* cyan */
+
+.club-purpose {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.club-meta a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.club-meta a:hover {
+  text-decoration: underline;
+}
+
+.club-skills {
+  margin-top: 12px;
+}
+
+.club-skills ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.club-skills li {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.club-skills i {
+  margin-right: 6px;
+  color: #ff7f00;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 992px) {
+  .clubs-grid {
+    justify-content: center;
+  }
+  .club-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .club-card {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Alumni Section === */
+.alumni-section {
+  padding: 60px 0;
+}
+
+/* Section title */
+.alumni-section h2 {
+  margin-bottom: 20px;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.alumni-buttons {
+  margin: 30px 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.alumni-btn {
+  background: transparent;
+  border: 2px solid #d1d5db;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.alumni-btn:hover {
+  background-color: #eef3fb;
+  border-color: #1f6fd1;
+}
+
+.alumni-btn.active {
+  border-color: #1f6fd1;
+  background-color: #f0f5ff;
+  box-shadow: 0 6px 18px rgba(31, 111, 209, 0.15);
+}
+
+/* Alumni content */
+.alumni-content {
+  display: none;
+  opacity: 0;
+  animation: fadeSlide 0.4s ease forwards;
+}
+
+.alumni-content.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Subsection: 2 columns desktop, 1 column mobile */
+.alumni-subsection {
+  gap: 20px 40px;
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .alumni-subsection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Conteneur des 2 colonnes */
+.alumni-subsection {
+    display: flex;            /* aligne les colonnes horizontalement */
+    gap: 40px;                /* espace entre les colonnes */
+    justify-content: center;  /* centre les colonnes sur grand écran */
+}
+
+
+
+/* Column-header reste centré */
+.column-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Trait bleu sous le titre */
+.separator-line-extra-thick-long {
+    display: block;
+    width: 120px;
+    height: 6px;
+    background-color: var(--base-color, #1f6fd1);
+    border-radius: 3px;
+    margin-top: 6px;
+}
+
+/* Mobile : passe en vertical */
+@media (max-width: 992px) {
+    .alumni-subsection {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container principal de la carte */
+.school-card {
+    display: flex;              /* logo + info côte à côte */
+    align-items: flex-start;    /* alignement en haut */
+    gap: 12px;                  /* espace entre logo et texte */
+    padding: 12px;
+    border: 1px solid #ddd;     /* optionnel : bordure pour visualiser la carte */
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;                /* prend la largeur de la colonne parent */
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    flex-wrap: wrap;            /* permet au contenu de s’adapter */
+}
+
+/* Logo */
+.school-logo {
+    flex: 0 0 60px;             /* taille fixe du logo */
+    height: 60px;
+    object-fit: contain;        /* le logo garde ses proportions */
+    border-radius: 4px;
+}
+
+/* Texte et infos */
+.school-info {
+    flex: 1 1 0;                /* prend le reste de l'espace disponible */
+    min-width: 0;               /* important pour que le texte wrap correctement */
+}
+
+/* Nom et classement */
+.school-name {
+    font-weight: 600;
+    font-size: 1em;
+    display: block;
+    word-break: break-word;     /* casse les mots trop longs */
+}
+
+.school-ranking {
+    font-size: 0.85em;
+    color: #1f6fd1;
+    line-height: 1.2em;
+    display: block;
+    word-break: break-word;
+}
+
+/* Localisation */
+.school-location {
+    font-size: 0.85em;
+    color: #555;
+    display: block;
+    word-break: break-word;
+    margin-bottom: 6px;
+}
+
+/* Formations */
+.school-formations {
+    display: flex;
+    flex-wrap: wrap;            /* les tags passent à la ligne si besoin */
+    gap: 4px;
+}
+
+.formation-tag {
+    background-color: #f0f4ff;
+    color: #1f6fd1;
+    padding: 2px 6px;
+    font-size: 0.75em;
+    border-radius: 4px;
+    white-space: normal;        /* permet de wrap si nécessaire */
+}
+
+
+
+/* Colonnes avec ligne verticale */
+.pathways-column,
+.schools-column {
+    position: relative;
+    padding-left: 16px; /* espace entre la ligne et le contenu */
+}
+
+
+.pathways-column,
+.schools-column {
+  position: relative;
+  padding-left: 16px;
+  min-height: 100px; /* permet au ::before d’exister */
+}
+
+
+/* Ligne verticale qui commence sous le trait horizontal */
+/* Ligne verticale à gauche des colonnes alumni */
+.alumni-column::before {
+  content: "";
+  position: absolute;
+  top: 55px;                 /* commence sous le trait horizontal */
+  left: 0;
+  width: 4px;
+  height: calc(100% - 55px);
+  background-color: #1f6fd1;
+  border-radius: 2px;
+}
+
+/* Pré-requis indispensable */
+.alumni-column {
+  position: relative;
+  padding-left: 16px;
+  min-height: 100px;
+}
+
+
+
+
+/* Flèche simple, centrée, rotation cohérente */
+.accordion-icon {
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid var(--base-color, #1f6fd1);
+    border-bottom: 3px solid var(--base-color, #1f6fd1);
+    transform: rotate(-45deg); /* fermé */
+    transition: transform 0.3s ease;
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+    transform: rotate(45deg); /* ouvert */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lists styling with vertical accent */
+
+
+.alumni-list li {
+  background: #f7f9fc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: all 0.25s ease;
+}
+
+.alumni-list li:hover {
+  background: #eef3fb;
+  transform: translateX(4px);
+}
+
+/* Subtext */
+.alumni-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85em;
+  color: #6b7280;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* === School cards === */
+.school-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.school-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.school-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.school-location {
+  font-size: 0.85em;
+  color: #6b7280;
+}
+
+/* Hover effect for entire li */
+.alumni-list li:has(.school-card):hover {
+  transform: translateX(6px);
+  background: #eef3fb;
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .school-card {
+    gap: 10px;
+  }
+
+  .school-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* === School formations tags === */
+/* Force le conteneur à prendre toute la largeur de la carte */
+.school-formations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+
+  width: 100%;
+  justify-content: center;
+}
+
+.school-name {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.school-location {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.school-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.formation-tag {
+  font-size: 0.72em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  color: #1e40af;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Slight highlight on hover */
+.school-card:hover .formation-tag {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+
+
+
+/* === School header layout === */
+.school-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+/* Logo bien à gauche */
+.school-header .school-logo {
+  justify-self: start;
+}
+
+/* Nom parfaitement centré sur la ligne */
+.school-header .school-name {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+
+.school-name {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .school-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .school-logo {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* === Final school card layout: logo left, content right === */
+
+.school-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+/* Logo à gauche */
+.school-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Bloc texte à droite */
+.school-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre nom, ville et tags entre eux */
+  width: 100%;
+}
+
+/* Nom centré */
+.school-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Ville centrée */
+.school-location {
+  text-align: center;
+}
+
+/* Tags centrés */
+.school-formations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .school-card {
+    flex-direction: column;
+  }
+}
+
+.school-ranking {
+    text-align: center;       /* centré comme le nom */
+    font-size: 0.8em;         /* légèrement plus petit */
+    font-weight: 500;         /* semi-bold */
+    color: #1f6fd1;           /* bleu cohérent avec tes accents alumni */
+    margin: 4px 0;            /* un petit espace au-dessus et en-dessous */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   Schools Accordion (Alumni)
+   =============================== */
+
+.schools-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Accordion item */
+.accordion-item {
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+  border-radius: 14px;
+  background: var(--card-bg, #fff);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header button */
+.accordion-header {
+  all: unset;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.1rem 1.4rem;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main, #111);
+
+  background: transparent;
+}
+
+.accordion-header:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+
+
+
+/* Content (collapsed by default) */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+/* When active */
+.accordion-item.active .accordion-content {
+  padding-bottom: 1.4rem;
+}
+
+/* Ensure school cards layout remains intact */
+.accordion-content > li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+/* Grid consistency with existing cards */
+.accordion-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+  .accordion-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ================================
+   ACCORDION GLOBAL
+================================ */
+
+.schools-accordion {
+  margin-top: 40px;
+}
+
+/* ================================
+   ACCORDION HEADER (CPGE, ENS, etc.)
+================================ */
+
+.accordion-item {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--base-color);
+  padding-left: 20px;
+}
+
+.accordion-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* Trait bleu sous le titre */
+.accordion-header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--base-color);
+  margin-top: 10px;
+}
+
+
+
+
+
+/* ================================
+   ACCORDION CONTENT
+================================ */
+
+.accordion-content {
+  margin-top: 25px;
+
+  padding-left: 20px;
+  border-left: 3px solid rgba(0, 120, 255, 0.25);
+}
+
+
+
+/* ================================
+   SCHOOL CARDS (distinctes)
+================================ */
+
+.accordion-content li {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.accordion-content .school-card {
+  display: flex;
+  gap: 20px;
+
+  background: #ffffff;
+  padding: 18px 22px;
+
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accordion-content .school-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+/* ================================
+   LOGO
+================================ */
+
+.school-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+/* ===============================
+   Alumni Accordion – FINAL
+   =============================== */
+
+.accordion-item {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--base-color, #1f6fd1);
+  padding-left: 20px;
+}
+
+.accordion-header {
+  all: unset;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+
+  padding: 16px 0;
+}
+
+.accordion-icon {
+  width: 12px;
+  height: 12px;
+  border-right: 3px solid var(--base-color, #1f6fd1);
+  border-bottom: 3px solid var(--base-color, #1f6fd1);
+  transform: rotate(-45deg);
+  transition: transform 0.35s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  padding-left: 20px;
+  border-left: 3px solid rgba(0,120,255,0.25);
+}
+
+.accordion-item.active .accordion-content {
+  padding-top: 20px;
+}
+
+
+
+/* === Alumni column accent (pathways & schools) === */
+.pathways-column::before,
+.schools-column::before {
+  background-color: var(--alumni-accent, #1f6fd1);
+}
+
+
+/* === Alumni subsection: force consistent 2-column layout === */
+.alumni-subsection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap; /* empêche le passage en colonne unique */
+}
+
+
+
+/* Responsive: réduit la largeur mais garde 2 colonnes */
+@media (max-width: 992px) {
+  .alumni-subsection > .pathways-column,
+  .alumni-subsection > .schools-column {
+    flex: 0 0 45%;
+  }
+}
+
+
+
+.alumni-subsection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+
+.alumni-subsection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 576px) {
+  .alumni-subsection {
+    flex-direction: column;
+  }
+
+  .alumni-subsection > .pathways-column,
+  .alumni-subsection > .schools-column {
+    flex: 1 1 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .alumni-subsection {
+    flex-direction: column;
+  }
+}
+
+
+.alumni-subsection {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+
+.alumni-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+
+
+
+/* === Alumni subsection: FINAL & STABLE === */
+.alumni-subsection {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+/* Colonnes strictement identiques */
+.alumni-subsection > .pathways-column,
+.alumni-subsection > .schools-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .alumni-subsection {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
