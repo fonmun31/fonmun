@@ -3068,5 +3068,142 @@
 
 
 
+/* =========================================
+   ALUMNI – MOBILE OPTIMIZATION (SAFE)
+   Aucun impact desktop
+   ========================================= */
+@media (max-width: 768px) {
+
+  /* Section respirable */
+  .alumni-section {
+    padding: 40px 0;
+  }
+
+  /* Sous-sections en pile propre */
+  .alumni-subsection {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Colonnes = pleine largeur */
+  .pathways-column,
+  .schools-column {
+    padding-left: 0;
+  }
+
+  /* Ligne verticale inutile sur mobile */
+  .alumni-column::before {
+    display: none;
+  }
+
+  /* Accordions : titres plus lisibles */
+  .accordion-header {
+    font-size: 1.15rem;
+    padding: 12px 0;
+  }
+
+  /* Contenu accordion : une seule colonne */
+  .accordion-content {
+    grid-template-columns: 1fr !important;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  /* School cards : confort tactile */
+  .school-card {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  /* Logo légèrement réduit */
+  .school-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Texte plus compact */
+  .school-name {
+    font-size: 0.95rem;
+  }
+
+  .school-location,
+  .school-ranking {
+    font-size: 0.8rem;
+  }
+
+  /* Tags : pas d’overflow */
+  .school-formations {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .formation-tag {
+    font-size: 0.7rem;
+  }
+
+  /* Désactive les hover “desktop” sur mobile */
+  .school-card:hover,
+  .alumni-list li:hover {
+    transform: none;
+    box-shadow: inherit;
+  }
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   School title with logo (Section 1)
+   ===================================== */
+
+.school-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+/* Logo = même hauteur que le texte */
+.school-title-logo {
+  height: 4em;
+  width: auto;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .school-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .school-title-logo {
+    height: 1.4em; /* léger boost visuel */
+  }
+}
