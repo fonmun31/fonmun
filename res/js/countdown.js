@@ -1,5 +1,5 @@
 $('.countdown-timer').countdown({
-    date: "April 11, 2026 09:00:00",
+    date: "March 27, 2026 09:00:00",
 
     render: function(data) {
         $(".days .value").html(this.leadingZeros(data.days, 2));
@@ -8,4 +8,5 @@ $('.countdown-timer').countdown({
         $(".seconds .value").html(this.leadingZeros(data.sec, 2));
     }
 });
+
 
