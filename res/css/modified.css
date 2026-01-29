@@ -3151,3 +3151,42 @@
     height: 1.4em; /* léger boost visuel */
   }
 }
+
+
+
+
+
+
+
+/* ======================================================
+   ALUMNI – SINGLE SOURCE OF TRUTH (MOBILE FIX DEFINITIVE)
+   ====================================================== */
+
+@media (max-width: 768px) {
+
+  /* Force empilement réel */
+  .alumni-subsection {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 24px !important;
+  }
+
+  /* Colonnes normales dans le flux */
+  .pathways-column,
+  .schools-column,
+  .alumni-column {
+    position: static !important;
+    min-height: auto !important;
+    padding-left: 0 !important;
+  }
+
+  /* SUPPRESSION ABSOLUE de toute ligne verticale */
+  .alumni-column::before,
+  .pathways-column::before,
+  .schools-column::before {
+    content: none !important;
+    display: none !important;
+  }
+
+}
